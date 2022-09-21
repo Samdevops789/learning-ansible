@@ -33,4 +33,19 @@
 
 ## Note: task level variables are limited to only that task.
 
+- name: Read the variables from Inventory file
+  hosts: all
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL == {{ URL }}
+
+- name: Read the variables from CLI
+  hosts: all
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL == {{ URL }}
+
+
 

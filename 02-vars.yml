@@ -17,7 +17,7 @@
   tasks:
     - name: Print URL
       ansible.builtin.debug:
-        msg: '{{ URL }}'
+        msg: URL == {{ URL }}
 
 - name: Demo on task level variables
   hosts: all

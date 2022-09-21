@@ -9,7 +9,7 @@
 
 ## In ansible we access variable within two flower brackets. {{URL}}, {{ URL }}, That spacing helps in reading the code in a better way.
 ## Play Variable - Declare on play, means all tasks can access that variable
-## Note: Variables of one play cannot be accessed by another play (By default)
+### Note: Variables of one play cannot be accessed by another play (By default)
 
 
 - name: Demo on Play var files

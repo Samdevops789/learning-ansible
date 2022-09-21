@@ -31,6 +31,16 @@
         URL: task.example.com
 
 
+- name: Read the variables from Inventory file
+  hosts: all
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL == {{ URL }}
+
+
+
+
 
 
 

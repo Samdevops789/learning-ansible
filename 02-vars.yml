@@ -30,6 +30,8 @@
       vars:
         URL: task.example.com
 
+# Task level variables are only limited to that task
+
 
 - name: Read the variables from Inventory file
   hosts: all

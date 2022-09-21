@@ -41,6 +41,13 @@
         msg: URL == {{ URL }}
 
 
+- name: Variable from CLI
+  hosts: all
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL == {{ URL }}
+
 
 
 

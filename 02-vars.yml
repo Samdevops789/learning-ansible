@@ -21,17 +21,6 @@
         msg: URL == {{ URL }}
 
 
-- name: Demo on task level variables
-  hosts: all
-  tasks:
-    - name: Print URL
-      ansible.builtin.debug:
-        msg: URL == {{ URL }}
-      #vars_files:
-      vars:
-        URL: task.example.com
-
-## Note: task level variables are limited to only that task.
 
 
 

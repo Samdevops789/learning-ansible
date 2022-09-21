@@ -46,6 +46,12 @@
         msg: URL == {{ URL }}
 
 
+- name: Variable from Roles
+  hosts: all
+  roles:
+    - sample
+
+
 
 
 

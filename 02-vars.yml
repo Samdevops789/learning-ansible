@@ -3,9 +3,9 @@
   vars:
     URL: play.example.com
   tasks:
-    - name: print URL
-      ansible.builtin.debug:
-      msg: URL == {{ URL }}
+    -  name: Print URL
+       ansible.builtin.debug:
+       msg: URL == {{ URL }}
 
 ## In ansible we access variable within two flower brackets. {{URL}}, {{ URL }}, That spacing helps in reading the code in a better way.
 ## Play Variable - Declare on play, means all tasks can access that variable

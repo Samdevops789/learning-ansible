@@ -60,16 +60,17 @@
 #      ansible.builtin.debug:
 #        msg: Hostname  == {{ ansible_hostname }}
 
-- name: Demo on register
-  hosts: all
-  tasks:
-    - name: Get uptime
-      ansible.builtin.shell: uptime
-      register: SHELL_OUTPUT
+ - name: Demo on register
+   hosts: all
+   tasks:
+     - name: Get uptime
+       ansible.builtin.shell: uptime
+       register: SHELL_OUTPUT
 
-      -name: print.output
-      ansible.builtin.debug:
+     - name: Print Output
+       ansible.builtin.debug:
         msg: "{{SHELL_OUTPUT.stdout}}"
+
 
 
 

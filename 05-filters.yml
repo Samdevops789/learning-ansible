@@ -1,5 +1,7 @@
 - name: Demo on filters
   hosts: all
+  vars:
+    NAME: Hello
   tasks:
     - name: Print uppercase to lower case
       ansible.builtin.debug:

@@ -9,9 +9,9 @@
           msg: Hello RedHat
           when: ansible_os_family == "RedHat"
 
-    - name: Run if it is debain family
+    - name: Run if it is debian family
       ansible.builtin.debug:
-            msg: Hello Debain
-            when: ansible_os_family == "Debain"
+            msg: Hello Debian
+            when: ansible_os_family == "Debian"
 
 

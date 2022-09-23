@@ -2,6 +2,6 @@
   hosts: all
   tasks:
 
-    - name: Print upcase to lower case
+    - name: Print uppercase to lower case
       ansible.builtin.debug:
            msg: "{{ NAME | lower }}"

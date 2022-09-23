@@ -5,7 +5,10 @@
       - name: if it is redhat family
         ansible.builtin.debug:
           msg: " Hello RedHat"
+          when: ansible_os_family == "RedHat"
 
       - name: if it is debian family
         ansible.builtin.debug:
           msg: " Hello Debian"
+          when: ansible_os_family == "Debian"
+

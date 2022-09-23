@@ -60,7 +60,7 @@
 #      ansible.builtin.debug:
 #        msg: Hostname  == {{ ansible_hostname }}
 
-  - name: Demo on register
+   - name: Demo on register
     hosts: all
     tasks:
       - name: Get uptime
